@@ -1,0 +1,116 @@
+@import   url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@media screen and (min-width: 640px){
+    .flex-container{
+        display: flex;
+    }
+}
+
+*{
+    color:#e6f1ff;
+    /*#8892b0*/
+}
+
+.inline {
+    display: inline;
+    font-size: 55px;
+}
+
+
+body{
+    font-family: IBM Plex Mono;
+    margin:0;
+    
+    background-color: #0a192f;
+}
+
+main, header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+
+
+.emailButton{
+
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    margin-top:20px;
+    justify-content: space-between;
+    width: 20%;
+    padding: 3%;
+    
+}
+
+
+.IntroductionText{
+    font-size: 20px;
+    margin-top: 10px;
+    color:#8892b0;
+    word-spacing: 100%;
+}
+
+
+.content{
+    flex: 1;
+}
+
+.sidebar{
+    flex: 0 1 300px;
+    
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px; /* Breite des Cursors */
+    height: 50px; /* Höhe des Cursors */
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff; /* Farbe des Cursors */
+    border-radius: 1px;
+    animation:blink 1.7s infinite; /* Animation definieren */
+}
+
+@keyframes writeText {
+    0% {
+        width: 0; /* Anfangsgröße auf 0 setzen */
+    }
+    100% {
+        width: 8px; /* Breite des Cursors erreichen */
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0; /* Cursor ausblenden */
+    }
+    50% {
+        opacity: 1; /* Cursor einblenden */
+    }
+}
+
+.start{
+    text-align: center;
+}
+
+.introduction{
+    font-size: 50px;
+    color:#ccd6f6;
+    margin: 0;
+    padding: 0;
+    word-spacing:0;
+
+}
+
+.description{
+   
+    margin:0;
+    color: #8892b0;
+    font-size: 30px;
+}
