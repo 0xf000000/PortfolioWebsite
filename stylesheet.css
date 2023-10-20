@@ -5,6 +5,16 @@
     }
 }
 
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 *{
     color:#e6f1ff;
     /*#8892b0*/
@@ -13,6 +23,7 @@
 .inline {
     display: inline;
     font-size: 55px;
+    color: #44f0b6;
 }
 
 
@@ -41,11 +52,18 @@ main, header, section, aside, footer {
 
     border: 1px solid greenyellow;
     border-radius: 5px;
-    margin-top:20px;
-    justify-content: space-between;
-    width: 20%;
-    padding: 3%;
+    margin-top:8%;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    padding:3%;
+    flex-direction: row;
     
+    
+}
+
+.buttonText{
+    display: inline;
 }
 
 
@@ -54,6 +72,7 @@ main, header, section, aside, footer {
     margin-top: 10px;
     color:#8892b0;
     word-spacing: 100%;
+    
 }
 
 
@@ -72,19 +91,12 @@ main, header, section, aside, footer {
     height: 50px; /* Höhe des Cursors */
     padding: 0;
     margin: 0;
-    background-color: #ffffff; /* Farbe des Cursors */
+    transform:translateY(4px);
+    background-color: #44f0b6; /* Farbe des Cursors */
     border-radius: 1px;
     animation:blink 1.7s infinite; /* Animation definieren */
 }
 
-@keyframes writeText {
-    0% {
-        width: 0; /* Anfangsgröße auf 0 setzen */
-    }
-    100% {
-        width: 8px; /* Breite des Cursors erreichen */
-    }
-}
 
 @keyframes blink {
     0%, 100% {
@@ -105,6 +117,20 @@ main, header, section, aside, footer {
     margin: 0;
     padding: 0;
     word-spacing:0;
+    
+}
+
+
+
+
+
+@keyframes show{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
 
 }
 
