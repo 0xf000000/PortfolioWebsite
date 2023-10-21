@@ -73,10 +73,10 @@ section{
     border-radius: 5px;
     margin-top:8%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 17%;
     padding:3%;
-    flex-direction: row;
+    
     background-color: #0a192f;
     font-family: IBM Plex Mono;
     color:#44f0b6;
@@ -96,11 +96,13 @@ section{
 }
 
 
+
 .IntroductionText{
     font-size: 20px;
     margin-top: 10px;
     color:#8892b0;
-    word-spacing: 100%;
+    word-spacing: 50%;
+    
     
     
 }
@@ -108,7 +110,7 @@ section{
 
 .content{
     flex: 1;
-    margin-right: 30%;
+    margin-right: 20%;
 }
 
 .sidebar{
@@ -207,23 +209,70 @@ to{
 
 .pictureWrapper{
     display: flex;
-        align-items: center;
-        justify-content: center
+        align-items: start;
+        justify-content: space-between;
 }
 
 .aboutMeText{
+    font-size: 20px;
+   width:40%;
    
+   color:#8892b0;
+}
+
+
+.blue{
+    color:#44f0b6;
+    font-size: 20px;
+    background-color: #0a192f;
 }
 
 .potrait{
-   flex-basis: 40%;
-   border-radius: 20px;
+ 
+   border-radius: 15px;
     width: 200px;
-    height: 200px;
+    height: 250px;
+
+    box-shadow: 5px 5px 2.5px black;
+      -moz-box-shadow: 5px 5px 2.5px black;
+      -webkit-box-shadow: 5px 5px 2.5px black;
+      -khtml-box-shadow: 5px 5px 2.5px black;
+    
 }
 
 .iconGithub{
    height: 20px;
+}
+
+.listWrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 3px;
+    color:#44546b;
+    height: 20px;
+}
+
+
+
+ul li::before{
+    content:"\2022";
+    color:#44f0b6;
+    font-weight: bold;
+    display:inline-block;
+    width:1em;
+    margin-left:-1em;
+
+
 }
 
 
