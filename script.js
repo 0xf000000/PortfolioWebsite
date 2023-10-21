@@ -2,9 +2,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
   
-  
-  
-  
+
   let statement = "Hey, Leon here."
   const introductionElement = document.querySelector(".introduction");
   introductionElement.innerHTML =  " <div class ='inline'> </div> <span class='cursor'></span>";
@@ -30,4 +28,17 @@ function sleep(ms) {
 }
 
 // Start typing when the page loads
-typeStatement();
+setTimeout(typeStatement,300 );
+
+
+// BUTTON
+
+function redirectToMail(){
+
+    window.location = "mailto:leon@margale.de"
+}
+
+
+let buttonElement = document.querySelector('.emailButton');
+
+buttonElement.addEventListener("click",redirectToMail);
