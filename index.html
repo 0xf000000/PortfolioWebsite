@@ -19,11 +19,11 @@
             <div class="Hero">
                 <canvas></canvas>
                 <div class="ss">
-                <div class="introduction">  <div class="inline">Leon</div> <span class="cursor"></span> </div>
-                <p class="description"> i create things sometimes.</p>
+                <div class="introduction visible">  <div class="inline">Leon</div> <span class="cursor"></span> </div>
+                <p class="description visible"> i create things sometimes.</p>
                 </div>
 
-                <div class="IntroductionText">
+                <div class="IntroductionText visible">
                     Im a software developer based in Cologne, my greatest interest are in Web development, Artificial Inteligens and programming creative
                          </div>
 
@@ -49,32 +49,32 @@
 
             <p class="technologies"> here are some Technologies i <br> have been working with:</p>
 
-            <div class="beforeObserved">
+            <div class="listWrapper">
                 <ul>
-                    <li>javascript es6+</li>
-                    <li>Java ee</li>
-                    <li>c++/c</li>
-                    <li>springboot</li>
+                    <li class="visible">javascript es6+</li>
+                    <li class="visible">Java ee</li>
+                    <li class="visible">c++/c</li>
+                    <li class="visible"> springboot</li>
                     
                 </ul>
 
                 <ul>
-                    <li>nodejs</li>
-                    <li>python</li>
-                    <li>sql</li>
-                    <li>CSS && HTML</li>
+                    <li class="visible">nodejs</li>
+                    <li class="visible">python</li>
+                    <li class="visible">sql</li>
+                    <li class="visible">CSS && HTML</li>
                 </ul>
 
             </div>
             
-            <p class="aboutMeText"> Beside from that i am interestet in Sailing, playing baskettball and spending a lot of time with my friends </p>
+            <p class="aboutMeText"> Beside from that i am interestet in <mark class="blue">Sailing</mark>, playing baskettball and spending a lot of time with my friends </p>
             
            
             
         </section>
 
         <section>
-            experience
+            <div class="aboutWrapper">  <div class="aboutme">/ experience</div> <hr class="breakLine"> </div>
         </section>
 
         <section>
@@ -88,12 +88,12 @@
 
         <aside class="sidebar">
           
-            <div class="links">/about me</div>
-            <div class="links">/experience</div>
-            <div class="links">/projects </div>
+            <div class="links visible">/about me</div>
+            <div class="links visible">/experience</div>
+            <div class="links visible">/projects </div>
 
-            <div> <span class="material-symbols-outlined sideBarIcon">mail</span>
-                 <img class="iconGithub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9UlEQVR4nO1ZT2gUZxQfLdZWaYvWRkTjybQXKZSUEK0QM9+360J7UlPaIp7ag1AQe+kfBXspraKItILaXjwJsf+S3fdmYxCPbaiUgu2pWEpM8JDd/d4kKTW9jLwxDft33szOzHpwH3yw7M78vvd7/79vLasrXelKbBnxRp8Ydgu7NeFxRfCdNvCHIqxoA//x8j8T/O7/RvCJcp1d/I71qEVXxrdrgtOKYFYTehHXjCL4Ilsu9nZc8dw8vqAIL/sWjq54zVIGl7SBi0Pz45s6onzGxUPKQDmu4g3LQEmT83Zqio94o09qgm8SV5zqF1zq926tSVT5zL2J9cpAMX3lcdkbiG/Mjq9LRHm2BgN2THla8cQkez02gc6EDbbKi4uxE7YZsCK8kaXixsw8vOYTbKcaPewPX3P/YCxtYKrZczbhW+2XypbVBt6pftam4oAimI4QHnf5Hava0wbebZEPc8qdfD4yAb/Ot1AgS4X++ue1m+9TBj9TBg4Mu85LbICch2s5jl+nwoYsFXfYBBll8Jhy4cX6920qDgR460L0DhsUFm6+z0pYslTc0Wo/ZeD+UAm3hSdAeCo4flElT6DQL+TM56GATnonV3OMBoEpA58mTUBV4LCQOzOhBsDlqVJKxA8TJ0COlvatT/ymwiNxoPUJZhNpMM1IGPxZIPGRDOLP7AnEYlsE4AOh/F4TQfgwEgSSIcymRSDjN8Yg7+NtEUQalfctOltSI7Aw0SNUv7kQBHApCISbU1oEch6uFarffZkA4T+PisDg9OjTQgFZFEE04d+BObAw0ZMWgX2LzhaBwF8iiCK8FQjiOrvSIqAruEeogFMyCOG3gSAVOJoWAWXwmOCBUZlABY4KifRTigR+EfrA+yKIXcGXg0GYhLM3aeW1QSXtmynnd4Yc5nBG8MKffIpKSvksn8gI7wjhM2153qpQgIoKJyRraIJf7VJ+a2zly8VeRfCb6HWCj0ODcqnkplFXAd5TBGN1JIgTL1fCZ6MqriuTz/Hsowhc0VgG/o18c6cMflkHcpXn8eaHHVh4OAQW3hSNQ86IIviem5IWvbyy93mrLQs1Xtoe4TjUhFca84JHEHg1hGFekcYVXbtm2vHw8mZwoA7sDhPwrxkNXNCEpp07HGXwq/DWd/a3pfzKZgTnqgFtUxiOBejfYOBgSAJn4+7ll9WaQ47B6/xdHEwOiRBV7lrcfWqmxJoKZDDP8R7naCkQ+GHIu/mUlah43iq+jWi1aWIEDJxPzPIBZbDhL6WoOE0a1axt8KDVCdk99+MznGDV5TAqRnX5VYRnGNPqtNgLY5v5jsgvrxHl/z/5hqJcGaYl7cRsqnHela48RvIAAn+/FkybWZsAAAAASUVORK5CYII="></div>
+            <div class="icons"> <span class="material-symbols-outlined sideBarIcon ">mail</span>
+                 <img class="iconGithub " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9UlEQVR4nO1ZT2gUZxQfLdZWaYvWRkTjybQXKZSUEK0QM9+360J7UlPaIp7ag1AQe+kfBXspraKItILaXjwJsf+S3fdmYxCPbaiUgu2pWEpM8JDd/d4kKTW9jLwxDft33szOzHpwH3yw7M78vvd7/79vLasrXelKbBnxRp8Ydgu7NeFxRfCdNvCHIqxoA//x8j8T/O7/RvCJcp1d/I71qEVXxrdrgtOKYFYTehHXjCL4Ilsu9nZc8dw8vqAIL/sWjq54zVIGl7SBi0Pz45s6onzGxUPKQDmu4g3LQEmT83Zqio94o09qgm8SV5zqF1zq926tSVT5zL2J9cpAMX3lcdkbiG/Mjq9LRHm2BgN2THla8cQkez02gc6EDbbKi4uxE7YZsCK8kaXixsw8vOYTbKcaPewPX3P/YCxtYKrZczbhW+2XypbVBt6pftam4oAimI4QHnf5Hava0wbebZEPc8qdfD4yAb/Ot1AgS4X++ue1m+9TBj9TBg4Mu85LbICch2s5jl+nwoYsFXfYBBll8Jhy4cX6920qDgR460L0DhsUFm6+z0pYslTc0Wo/ZeD+UAm3hSdAeCo4flElT6DQL+TM56GATnonV3OMBoEpA58mTUBV4LCQOzOhBsDlqVJKxA8TJ0COlvatT/ymwiNxoPUJZhNpMM1IGPxZIPGRDOLP7AnEYlsE4AOh/F4TQfgwEgSSIcymRSDjN8Yg7+NtEUQalfctOltSI7Aw0SNUv7kQBHApCISbU1oEch6uFarffZkA4T+PisDg9OjTQgFZFEE04d+BObAw0ZMWgX2LzhaBwF8iiCK8FQjiOrvSIqAruEeogFMyCOG3gSAVOJoWAWXwmOCBUZlABY4KifRTigR+EfrA+yKIXcGXg0GYhLM3aeW1QSXtmynnd4Yc5nBG8MKffIpKSvksn8gI7wjhM2153qpQgIoKJyRraIJf7VJ+a2zly8VeRfCb6HWCj0ODcqnkplFXAd5TBGN1JIgTL1fCZ6MqriuTz/Hsowhc0VgG/o18c6cMflkHcpXn8eaHHVh4OAQW3hSNQ86IIviem5IWvbyy93mrLQs1Xtoe4TjUhFca84JHEHg1hGFekcYVXbtm2vHw8mZwoA7sDhPwrxkNXNCEpp07HGXwq/DWd/a3pfzKZgTnqgFtUxiOBejfYOBgSAJn4+7ll9WaQ47B6/xdHEwOiRBV7lrcfWqmxJoKZDDP8R7naCkQ+GHIu/mUlah43iq+jWi1aWIEDJxPzPIBZbDhL6WoOE0a1axt8KDVCdk99+MznGDV5TAqRnX5VYRnGNPqtNgLY5v5jsgvrxHl/z/5hqJcGaYl7cRsqnHela48RvIAAn+/FkybWZsAAAAASUVORK5CYII="></div>
             
             </aside>
 

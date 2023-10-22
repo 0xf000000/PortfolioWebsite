@@ -50,8 +50,9 @@ buttonElement.addEventListener("click",redirectToMail);
 function handleIntersection(entries, observer){
     entries.forEach((entry) =>{
         if(entry.isIntersecting){
-            entry.target.classList.remove('beforeObserved');
-            entry.target.classList.add('visible');
+            sleep(3000);
+            entry.target.classList.remove('visible');
+            entry.target.classList.add('Observed');
             observer.unobserve(entry.target);
         }
     });
@@ -64,9 +65,14 @@ const observer = new IntersectionObserver(handleIntersection,{
     threshold: 0.2,
 });
 
-const listWrapper = document.querySelector('.beforeObserved');
+let listWrapper = document.getElementsByClassName('visible')
 
 // Start observing the element
 if (listWrapper) {
-  observer.observe(listWrapper);
+    for(let i = 0; i < listWrapper.length; i++){
+        
+        observer.observe(listWrapper[i]) ;
+    }
+  
 }
+

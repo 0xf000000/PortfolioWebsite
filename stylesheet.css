@@ -262,34 +262,26 @@ to{
 
   .visible{
     opacity: 0;
-    display: flex;
-    bottom: -100%;
-    justify-content: start;
-    align-items: center;
 
-    transform: translateY(100%);
-    
-    animation: smooth-appear 1s ease forwards;
   }
 
-  .beforeObserved{
+  
+
+  .Observed{
     opacity: 0;
+    bottom: -100%;
+    transform: translateY(100%);
+    animation: smooth-appear 1s ease forwards;
   }
 
 
 
 .listWrapper{
-    opacity: 0;
+   
     display: flex;
-    bottom: -100%;
+    
     justify-content: start;
     align-items: center;
-
-    transform: translateY(100%);
-    
-    animation: smooth-appear 1s ease forwards;
-    
-
 }
 
 
@@ -323,5 +315,9 @@ ul li::before{
 
 .besideFromThat{
     width:40%;
+}
+
+.icons{
+    margin-top: 3%;
 }
 
