@@ -42,3 +42,31 @@ function redirectToMail(){
 let buttonElement = document.querySelector('.emailButton');
 
 buttonElement.addEventListener("click",redirectToMail);
+
+
+
+// Observer for the elements to appear
+
+function handleIntersection(entries, observer){
+    entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.remove('beforeObserved');
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+
+}
+
+const observer = new IntersectionObserver(handleIntersection,{
+    root:null,
+    rootMargin:'0px',
+    threshold: 0.2,
+});
+
+const listWrapper = document.querySelector('.beforeObserved');
+
+// Start observing the element
+if (listWrapper) {
+  observer.observe(listWrapper);
+}
