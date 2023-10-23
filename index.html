@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leon his website</title>
     <link href="./stylesheet.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -50,13 +51,13 @@
             <p class="technologies"> here are some Technologies i <br> have been working with:</p>
 
             <div class="listWrapper">
-                <ul>
+                    <ul>
                     <li class="visible">javascript es6+</li>
                     <li class="visible">Java ee</li>
                     <li class="visible">c++/c</li>
                     <li class="visible"> springboot</li>
-                    
                 </ul>
+                
 
                 <ul>
                     <li class="visible">nodejs</li>
@@ -75,6 +76,46 @@
 
         <section>
             <div class="aboutWrapper">  <div class="aboutme">/ experience</div> <hr class="breakLine"> </div>
+            <div class="multitabWrapper">
+                <div class="buttonWrapper">
+                <button onclick="changeTab('button1', 'gothaer')" id="button1"  class="tablinks active" > gothaer</button>
+                <button onclick="changeTab('button2', 'uni')" id="button2"  class="tablinks"> uni</button>
+                <button onclick="changeTab('button3','nextToCome')" id="button3" class="tablinks">sss</button>
+                </div>
+                <div class="tabWrapper">
+                <div id="gothaer"  class="tabcontent " style="display:none;">
+                <p class="tabHeading visible"> Software Developer as a Working student @ <mark class="blue"> Gothaer Solutions</mark></p>
+                <ul>
+                    <li class="visible"> all in all i programmed new features for a java Application that run under jboss and gwt </li>
+                    <li class="visible"> also i needed to </li>
+
+                </ul>
+
+              </div>
+
+              <div id="uni" class="tabcontent">
+                <p class="tabHeading"> worker works</p>
+                <ul>
+                    <li>sss</li>
+
+                </ul>
+
+              </div>
+
+              <div id="nextToCome" class="tabcontent">
+                <p class="tabHeading"> worker works</p>
+                <ul>
+                    <li>sss</li>
+
+                </ul>
+
+              </div>
+            </div>
+
+
+            </div>
+
+
         </section>
 
         <section>

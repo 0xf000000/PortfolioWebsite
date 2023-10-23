@@ -1,3 +1,6 @@
+/* set some color variables*/
+
+
 @import   url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 @media screen and (min-width: 640px){
     .flex-container{
@@ -9,7 +12,7 @@
 
 @media screen and (max-width: 639px){
     .sidebar{
-       
+      
         opacity: 0;
 
     }
@@ -194,7 +197,7 @@ to{
 .sidebar{
   
    position:fixed;
-   
+   border: none;
    right: 5%;
    bottom:10%;
 
@@ -320,4 +323,69 @@ ul li::before{
 .icons{
     margin-top: 3%;
 }
+
+
+/* horizontal Multitab */
+
+.active{
+    color:#44f0b6;
+}
+
+.multitabWrapper{
+ display: flex;
+ 
+ 
+ 
+}
+
+.buttonWrapper{
+    display:flex;
+    
+    flex-direction: column;
+   width: 20%;
+   
+    
+   
+}
+
+.buttonWrapper button{
+
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    font-family: IBM Plex Mono;
+    color:#ccc;
+    font-size: 14px;
+   
+    height: 50px;
+    
+    
+    
+}
+
+.tabWrapper{
+    
+    height: 40%;
+    width: 40%;
+}
+
+#gothaer{
+    width: 700px;
+}
+
+
+
+.tabcontent {
+   
+    padding: 0px 12px;
+   
+    
+    
+    
+  }
+
+
+
+
 
