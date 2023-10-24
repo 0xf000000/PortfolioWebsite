@@ -1,7 +1,7 @@
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-  
 
   let statement = "Hey, Leon here."
   const introductionElement = document.querySelector(".introduction");
@@ -76,6 +76,16 @@ if (listWrapper) {
   
 }
 
+let buttons = document.getElementsByClassName("tablinks");
+
+for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener("click", () => {
+        changeTab(buttons[i].id,buttons[i].innerText);
+    });
+
+}
+
+
 
 
 
@@ -117,6 +127,8 @@ function changeTab(clickedButton, workingName){
     
 
 }
+
+
 
 
 

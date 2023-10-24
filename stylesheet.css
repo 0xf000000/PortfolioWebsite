@@ -290,11 +290,12 @@ to{
 
 ul{
     list-style: none;
+    
 }
 
 li{
     margin: 3px;
-    color:#44546b;
+    color:#8892b0;
     height: 20px;
 }
 
@@ -376,10 +377,11 @@ ul li::before{
 
 
 
+
 .tabcontent {
    
     padding: 0px 12px;
-   
+    flex-direction: row;
     
     
     
