@@ -344,7 +344,7 @@ ul li::before{
 .multitabWrapper{
  display: flex;
  
- 
+ margin-top: 20px;
  
 }
 
