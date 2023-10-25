@@ -1,16 +1,14 @@
 
 import typeStatement from "./typestatement.js";
 import handleIntersection from "./observer.js";
-
+import setupListeners from "./eventListener.js";
 
 // Start typing when the page loads
 setTimeout(typeStatement,300 );
 
 
 // quick event listener to handle the email redirection
-document.querySelector('.emailButton').addEventListener("click",() => {
-    window.location = "mailto:leon@margale.de"
-});
+
 
 let setupObserver = () => {
 
@@ -33,11 +31,8 @@ let setupObserver = () => {
     
 }
 
-
-setupObserver();
-
-
-let buttons = document.getElementsByClassName("tablinks");
+function setupTabEventlistener(){
+    let buttons = document.getElementsByClassName("tablinks");
 
 for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("click", () => {
@@ -45,6 +40,20 @@ for(let i = 0; i < buttons.length; i++){
     });
 
 }
+}
+
+setupListeners();
+setupTabEventlistener();
+setupObserver();
+
+
+document.querySelector('.emailButton').addEventListener("click",() => {
+    window.location = "mailto:leon@margale.de"
+});
+
+
+
+
 
 
 
