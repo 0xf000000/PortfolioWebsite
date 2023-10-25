@@ -120,6 +120,11 @@ section{
 }
 
 
+.canvasTree{
+    border:1px solid black;
+    
+}
+
 .content{
     flex: 1;
     margin-right: 20%;
