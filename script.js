@@ -1,7 +1,5 @@
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
+import sleep from "./sleep.js"
 
   let statement = "Hey, Leon here."
   const introductionElement = document.querySelector(".introduction");
