@@ -53,4 +53,16 @@ for(let i = 0; i < buttons.length; i++){
 }
 
 
-export default setupEventlistener;
+function setupSmothScrolling() {
+
+    let links = document.getElementsByClassName('links');
+for(let i = 0; i < links.length; i++){
+    links[i].addEventListener("click", () => {
+        document.getElementById(links[i].innerText).scrollIntoView({behavior: 'smooth', block:'start',inline:'start'});
+    })
+}
+
+}
+
+
+export {setupEventlistener, setupSmothScrolling};

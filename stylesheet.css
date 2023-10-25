@@ -216,7 +216,12 @@ to{
     
     
     color:var(--highlightColor);
+    cursor:pointer;
     
+}
+
+.links:hover{
+    color: var(--strongWhite);
 }
 
 .pictureWrapper{
@@ -395,7 +400,14 @@ ul li::before{
     
   }
 
-
+  .linkWrapper{
+    
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+  }
 
 
 

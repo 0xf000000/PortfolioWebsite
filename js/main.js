@@ -1,7 +1,7 @@
 
 import typeStatement from "./typestatement.js";
 import handleIntersection from "./observer.js";
-import setupEventlistener from "./eventListener.js"
+import {setupEventlistener, setupSmothScrolling} from "./eventListener.js"
 // Start typing when the page loads
 setTimeout(typeStatement,300 );
 
@@ -32,6 +32,8 @@ let setupObserver = () => {
 
 
 
+
+setupSmothScrolling();
 setupEventlistener();
 setupObserver();
 
