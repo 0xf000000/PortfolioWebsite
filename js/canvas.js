@@ -30,7 +30,7 @@ function drawTree(x1, y1, angle, depth, angT ){
 window.addEventListener('load',function () {
 
 let offset = 1;
-let num = 1
+let num = 0.5
 
 function test(){
     offset = offset + num;
@@ -40,11 +40,11 @@ function test(){
     
 
     if(offset == 35){
-        num = -1;
+        num = -0.5;
     }
 
     if(offset == 1){
-        num = 1;
+        num = 0.5;
     }
 
 
@@ -59,6 +59,7 @@ function test(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.strokeStyle="#ffffff";
+    ctx.lineWidth = 1.5;
     drawTree(canvas.width / 2 ,canvas.height, -90, depth, offset);
     ctx.closePath();
     ctx.stroke();
