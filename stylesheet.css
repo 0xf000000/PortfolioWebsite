@@ -425,6 +425,9 @@ ul li::before{
 
 .mySlides{
     display:none;
+    right: 200px;
+    transition: 2s;
+   
 }
 
 
@@ -433,6 +436,7 @@ ul li::before{
 .prev, .next{
     cursor: pointer;
     position: absolute;
+    bottom: 200px;
     padding: 16px;
   color: white;
   font-weight: bold;
@@ -457,7 +461,7 @@ ul li::before{
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 200px;
     width: 100%;
     text-align: center;
   }
@@ -473,18 +477,18 @@ ul li::before{
 
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 3px;
+    width: 30px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
+    
     display: inline-block;
     transition: background-color 0.6s ease;
   }
 
 
   .active, .dot:hover {
-    background-color: #717171;
+    background-color:#44f0b6;
   }
 
   .fade {
@@ -495,4 +499,8 @@ ul li::before{
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+  .slideImage{
+    border-radius: 25px;
   }

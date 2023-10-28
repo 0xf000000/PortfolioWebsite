@@ -60,6 +60,8 @@ function showSlides(n){
       }
 
       slides[slideIndex-1].style.display = "block";
+      slides[slideIndex-1].style.right = 0;
+      slides[slideIndex-1].style.transition = 2;
   dots[slideIndex-1].className += " active";
 }
 
