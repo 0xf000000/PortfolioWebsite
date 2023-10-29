@@ -120,10 +120,7 @@ section{
 }
 
 
-.canvasTree{
-    
-    
-}
+
 
 .content{
     flex: 1;
@@ -418,12 +415,14 @@ ul li::before{
   /* SLIDESHOW ----->*/
 
 .slideshowContainer{
+   
     max-width: 1000px;
     position:relative;
     margin:auto;
 }
 
 .mySlides{
+    margin-top: 50px;
     display:none;
     right: 200px;
     transition: 2s;
@@ -502,5 +501,5 @@ ul li::before{
   }
 
   .slideImage{
-    border-radius: 25px;
+    border-radius: 30px;
   }

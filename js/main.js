@@ -65,6 +65,13 @@ function showSlides(n){
   dots[slideIndex-1].className += " active";
 }
 
+function plusSlides(n){
+    showSlides(slideIndex +=n);
+}
+
+function currentSlide(n){
+    showSlides(slideIndex =  n);
+}
 
 document.querySelector(".prev").addEventListener("click", () => {
     plusSlides(-1);
@@ -76,14 +83,14 @@ document.querySelector(".next").addEventListener("click", () => {
 
 })
 
+let dots = document.getElementsByClassName('dot');
 
+for( let i = 0; i < dots.length;i++){
+    
+    dots[i].addEventListener("click", () => {
+        currentSlide(i +1);
+    });
 
-function plusSlides(n){
-    showSlides(slideIndex +=n);
-}
-
-function currentSlide(n){
-    showSlides(slideIndex =  n);
 }
 
 
