@@ -7,7 +7,7 @@ async  function typeStatement() {
     introductionElement.innerHTML =  " <div class ='inline'> </div> <span class='cursor'></span>";
 
     while(i < statement.length){
-        await sleep(100);
+        await sleep(170);
         let position = introductionElement.innerHTML.indexOf("<span");
         let char = statement.charAt(i);
 

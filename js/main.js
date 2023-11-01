@@ -40,60 +40,29 @@ setupObserver();
 
 // Slideshow --
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const slidesContainer = document.getElementById("slides-container");
 
+const slide = document.querySelector(".slide");
 
-function showSlides(n){
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if(n > slides.length) {slideIndex = 1;}
-    if(n < 1 ){slideIndex = slides.length;}
+const prevButton = document.getElementById("slide-arrow-prev");
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
+const nextButton = document.getElementById("slide-arrow-next");
 
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
+nextButton.addEventListener("click", () => {
 
-      slides[slideIndex-1].style.display = "block";
-      slides[slideIndex-1].style.right = 0;
-      slides[slideIndex-1].style.transition = 2;
-  dots[slideIndex-1].className += " active";
-}
+  const slideWidth = slide.clientWidth;
 
-function plusSlides(n){
-    showSlides(slideIndex +=n);
-}
+  slidesContainer.scrollLeft += slideWidth;
 
-function currentSlide(n){
-    showSlides(slideIndex =  n);
-}
+});
 
-document.querySelector(".prev").addEventListener("click", () => {
-    plusSlides(-1);
+prevButton.addEventListener("click", () => {
 
-})
+  const slideWidth = slide.clientWidth;
 
-document.querySelector(".next").addEventListener("click", () => {
-    plusSlides(1);
+  slidesContainer.scrollLeft -= slideWidth;
 
-})
-
-let dots = document.getElementsByClassName('dot');
-
-for( let i = 0; i < dots.length;i++){
-    
-    dots[i].addEventListener("click", () => {
-        currentSlide(i +1);
-    });
-
-}
-
-
+});
 
 
 

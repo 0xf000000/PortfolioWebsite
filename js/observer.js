@@ -1,13 +1,23 @@
+import sleep from "./sleep.js";
 // Observer for the elements to appear
-function handleIntersection(entries, observer){
-    entries.forEach((entry) =>{
+async function handleIntersection(entries, observer){
+
+    for (const entry of entries){
+
         if(entry.isIntersecting){
+           await sleep(300);
             
-            entry.target.classList.remove('visible');
+           entry.target.classList.remove('visible');
             entry.target.classList.add('Observed');
-            observer.unobserve(entry.target);
-        }
-    });
+
+             
+             observer.unobserve(entry.target);
+         }
+
+    } 
+
+
+   
 
 }
 

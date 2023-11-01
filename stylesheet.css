@@ -304,12 +304,12 @@ to{
 }
 
 
-ul{
+.listWrapper ul{
     list-style: none;
     
 }
 
-li{
+ .listWrapper li {
     margin: 3px;
     color:var(--whiteGray);
     height: 20px;
@@ -317,14 +317,13 @@ li{
 
 
 
-ul li::before{
+.listWrapper ul li::before{
     content:"\2022";
     color:var(--highlightColor);
     font-weight: bold;
     display:inline-block;
     width:1em;
     margin-left:-1em;
-
 
 }
 
@@ -390,16 +389,10 @@ ul li::before{
     width: 700px;
 }
 
-
-
-
 .tabcontent {
    
     padding: 0px 12px;
     flex-direction: row;
-    
-    
-    
   }
 
   .linkWrapper{
@@ -411,95 +404,120 @@ ul li::before{
     font-size: 12px;
   }
 
+  .heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+
 
   /* SLIDESHOW ----->*/
 
-.slideshowContainer{
+  .slideWrapper{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 45px;
    
-    max-width: 1000px;
-    position:relative;
-    margin:auto;
-}
-
-.mySlides{
-    margin-top: 50px;
-    display:none;
-    right: 200px;
-    transition: 2s;
-   
-}
-
-
-
-
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    bottom: 200px;
-    padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
   }
 
-  .prev:hover, .next:hover {
-    
-    color:#44f0b6;
+  .slides-container{
+    height: calc(100vh - 2rem);
+    width:100%;
+    display:flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+
+    -ms-overflow-style: none;
+  }
+  .slides-container ul{
+    list-style: none;
+
   }
 
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 200px;
+  .slides-container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+
+  .slide{
     width: 100%;
-    text-align: center;
+    height: 100%;
+    flex: 1 0 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
   }
 
+  .slide-arrow {
 
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
     position: absolute;
+  
+    display: flex;
+  
     top: 0;
-  }
-
-  .dot {
+  
+    bottom: 0;
+  
+    margin: auto;
+  
+    height: 4rem;
+  
+    background-color: white;
+  
+    border: none;
+  
+    width: 2rem;
+  
+    font-size: 3rem;
+  
+    padding: 0;
+  
     cursor: pointer;
-    height: 3px;
-    width: 30px;
-    margin: 0 2px;
-    background-color: #bbb;
-    
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  
+    opacity: 0.5;
+  
+    transition: opacity 100ms;
+  
+  }
+  
+  .slide-arrow:hover,
+  
+  .slide-arrow:focus {
+  
+    opacity: 1;
+  
+  }
+  
+  #slide-arrow-prev {
+  
+    left: 0;
+  
+    padding-left: 0.25rem;
+  
+    border-radius: 0 2rem 2rem 0;
+  
+  }
+  
+  #slide-arrow-next {
+  
+    right: 0;
+  
+    padding-left: 0.75rem;
+  
+    border-radius: 2rem 0 0 2rem;
+  
   }
 
-
-  .active, .dot:hover {
-    background-color:#44f0b6;
+  .slide1{
+   
+    background-image: url("https://geeksww.com/images/apache_source_code.png");
+   
   }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  .slideImage{
-    border-radius: 30px;
-  }
+  
