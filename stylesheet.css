@@ -233,10 +233,9 @@ to{
 }
 
 .aboutMeText{
-    font-size: 20px;
-   width:40%;
-   font-weight: 100;
-   
+    font-size: 17px;
+   width:50%;
+   line-height:200%;
    color: var(--whiteGray);
 }
 
@@ -248,7 +247,7 @@ to{
 
 .blue{
     color:var(--highlightColor);
-    font-size: 20px;
+    font-size: 18px;
     background-color: var(--darkBlue);
 }
 
@@ -418,12 +417,12 @@ to{
     margin: 1rem;
     position: relative;
     overflow: hidden;
-    border-radius: 45px;
+    border-radius: 10px;
    
   }
 
   .slides-container{
-    height: calc(100vh - 2rem);
+    height: calc(100vh - 10rem);
     width:100%;
     display:flex;
     list-style: none;
@@ -468,8 +467,6 @@ to{
     margin: auto;
   
     height: 4rem;
-  
-    background-color: white;
   
     border: none;
   
@@ -518,6 +515,41 @@ to{
   .slide1{
    
     background-image: url("https://geeksww.com/images/apache_source_code.png");
-   
+  }
+
+  footer{
+    font-size: 10px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buildBy{
+    color:var(--strongWhite);
+  }
+
+  .C{
+    font-size: 30px;
+    color:var(--highlightColor);
   }
   
+  .pointwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carouselButton{
+    background-color: var(--whiteGray);
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+   
+    transition: background-color 0.3s;
+  }
+
+  .carouselButton:hover{
+    background-color: var(--highlightColor);
+    cursor:pointer;
+  }
